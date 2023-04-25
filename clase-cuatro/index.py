@@ -103,19 +103,19 @@ Dayana = 3
 # print("Responda las siguientes preguntas con sí o no")
 
 puede_volar = False
-# es_humano = True
-# tiene_mascara = True
+es_humano =  False
+tiene_mascara = False
 
-# if puede_volar == "sí" and es_humano == "no" and tiene_mascara == "sí":
-#     print("¡El personaje a adivinar es Iron Man!")
-# elif puede_volar == "sí" and es_humano == "no" and tiene_mascara == "no":
-#     print("¡El personaje a adivinar es Thor!")
-# elif puede_volar == "no" and es_humano == "sí" and tiene_mascara == "sí":
-#     print("¡El personaje a adivinar es Spider-Man!")
-# elif puede_volar == "no" and es_humano == "sí" and tiene_mascara == "no":
-#     print("¡El personaje a adivinar es Captain America!")
-# else:
-#     print("Lo siento, no he podido adivinar el personaje.")
+if puede_volar == True and es_humano == True and tiene_mascara == True:
+    print("¡El personaje a adivinar es Iron Man!")
+elif puede_volar == True and es_humano == False and tiene_mascara == False:
+    print("¡El personaje a adivinar es Thor!")
+elif puede_volar == False and es_humano == True and tiene_mascara == True:
+    print("¡El personaje a adivinar es Spider-Man!")
+elif puede_volar == False and es_humano == True and tiene_mascara == False:
+    print("¡El personaje a adivinar es Captain America!")
+else:
+    print("Lo siento, no he podido adivinar el personaje.")
 
 
 # trabajando con ciclos

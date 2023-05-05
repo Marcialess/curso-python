@@ -17,8 +17,10 @@ class MobilePhone:
         self.manufacturer = manufacturer
         self.screen_size = screen_size
         self.num_cores = num_cores
-        self.apps = apps
-        self.status = status
+        self.apps = []
+        self.status = False
+        
+
 
     def power_on(self):
         self.status = True
@@ -28,11 +30,11 @@ class MobilePhone:
         self.status = False
         print("Good Bye")    
 
-    def install_apps (self,msj):
-        self.apps.append(msj)
+    def install_apps (self,apps):
+        self.apps.append(apps)
 
-    def uninstall_apps(self,msj):
-        self.apps.replace(msj)    
+    def uninstall_apps(self,apps):
+        self.apps.remove(apps)    
     
         
         
@@ -41,10 +43,18 @@ PhoneAndroid = MobilePhone (
     manufacturer="China",
     screen_size= 9.1,
     num_cores=8,
-    apps=['Whatsapp', 'YouTube', 'Instagram'],
+    apps=[],
     )
 
 PhoneAndroid.install_apps("Spotify")
+PhoneAndroid.install_apps("Facebook")
+PhoneAndroid.install_apps("Instagram")
 print(PhoneAndroid.apps)
+
+PhoneAndroid.uninstall_apps("Spotify")
+print(PhoneAndroid.apps)
+
+
+    
         
         

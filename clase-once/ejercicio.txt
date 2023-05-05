@@ -1,0 +1,50 @@
+# se necesita realizar un programa basado en clases que permita
+ automatizar el torniquete (control de acceso)
+# de una micro, de la siguiente manera
+
+#     1 Las personas que aboradan la micro son, mujeres, hombres,
+     niños y adulto mayor, de los cuales los niños no pagan
+#    y los adultos mayores pagan la tarifa  el 50%
+    
+#     2 el cobro actual de la micro es de 730 pesos
+
+#     3 por lo que necesitamos un reporte de operacion por dia donde,
+      por micro (cada micro se reguistra por patente), 
+#     se listen los tipos de usuario y la cantidad total recaudad por 
+#       cada, anexar a este reporte el total por dia
+
+#     4. seria interesante que aparte del reporte anterior que es total,
+      tener uno filtrado por dia y otro filtrado
+#        por persona.
+
+Para automatizar el control de acceso de una micro, se puede crear una clase Torniquete con los siguientes atributos y métodos:
+
+Atributos:
+
+patente: un string que representa la patente de la micro.
+tarifa: un float que representa el precio de la tarifa (actualmente 730 pesos).
+usuarios: una lista que almacena los usuarios que ingresan a la micro.
+Métodos:
+
+registrar_usuario: recibe como parámetro un objeto de la clase Usuario y lo agrega a la lista de usuarios de la micro.
+reporte_total_por_micro: imprime en consola un reporte de operación por día para la micro, listando los tipos de usuario y la cantidad total recaudada por cada uno. También incluye el total recaudado por la micro en ese día.
+reporte_filtrado_por_dia: recibe como parámetro una fecha en formato dd/mm/aaaa y devuelve un reporte filtrado por día para la micro, listando los tipos de usuario y la cantidad total recaudada por cada uno en esa fecha.
+reporte_filtrado_por_usuario: recibe como parámetro el tipo de usuario (mujer, hombre, adulto mayor o niño) y devuelve un reporte filtrado por usuario para la micro, listando las fechas en que ese tipo de usuario ingresó y la cantidad total recaudada por cada uno.
+Para implementar la clase Usuario, se pueden definir los siguientes atributos:
+
+
+Se pueden implementar métodos para determinar si el usuario debe pagar la tarifa completa o el 50% de ella, según su edad y sexo.
+
+Para la automatización del proceso, se puede crear un programa principal que solicite la información necesaria (patente de la micro, tipo de usuario que ingresa y fecha) y utilice los métodos de la clase Torniquete para registrar al usuario, generar los reportes y mostrarlos en consola.
+
+Por ejemplo, el programa podría tener el siguiente flujo:
+
+Crear una instancia de la clase Torniquete con la patente de la micro correspondiente.
+Solicitar al usuario que ingrese el tipo de usuario que está ingresando (mujer, hombre, niño o adulto mayor) y la fecha en formato dd/mm/aaaa.
+Crear una instancia de la clase Usuario con la información ingresada por el usuario.
+Utilizar el método registrar_usuario de la clase Torniquete para agregar el usuario a la lista correspondiente.
+Utilizar el método reporte_total_por_micro para generar y mostrar el reporte total por micro en consola.
+Utilizar el método reporte_filtrado_por_dia con la fecha ingresada por el usuario para generar y mostrar el reporte filtrado por día en consola.
+Utilizar el método reporte_filtrado_por_usuario con el tipo de usuario ingresado por el usuario para generar y mostrar el reporte filtrado por usuario en consola.
+De esta manera, se automatiza el control de acceso de la micro y se genera un registro de operaciones por día, por usuario y por micro, lo que facilita el seguimiento y la gestión de los ingresos.
+

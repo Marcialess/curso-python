@@ -1,0 +1,38 @@
+En una derminada empresa sus empleados son evaluados al final de cada año. Los 
+puntos que pueden obtener en la evaluacion comienzan en 0.0 y pueden ir aumentando
+traduciendose en mejores beneficios. Los puntos que pueden conseguir los 
+empleados pueden ser 0.0,0.4,0.6 o mas pero no valores 
+intermedios entre las cifras mencionadas. A continuacion se muestra una tabla con los niveles
+correspondientes a cada puntacion.
+la cantidad de dinero conseguida en cada nivel es de 2400$ multiplicada
+por la puntuacion del nivel
+
+nivel   puntacion
+inaceptable  0.0
+aceptable  0.4
+meritorio 0.6 o mas
+
+escribir un programa que lea la puntacion
+del usuario e indique su nivel de rendimiento, asi como la cantidad de dinero que recibira el usuario.
+
+
+inicio  
+
+crear  variables con los valores:
+dinero = 2400
+variable1 = inaceptable 0.0
+variable2 = aceptable 0.4
+variable3 = meritio 0.6 
+
+====================  Inicio Proceso ===================
+una pregunta a usuario que solicite su puntuacion, y se almacene en una variable
+
+==================== Fin Proceso proceso ==================
+
+==================   Inicio Condicional ======================
+variable1 >= 0.0 no recibira aumento e imprimir resultado
+variable2 >= 0.4  recibira aumento de variable2 * dinero  e imprimir resultado
+variable3 >= 0.6  recibira aumento de variable3 * dinero  e imprimir resultado
+================== Fin condicionales =========================
+
+==================== Fin ======================

@@ -36,3 +36,19 @@ variable3 >= 0.6  recibira aumento de variable3 * dinero  e imprimir resultado
 ================== Fin condicionales =========================
 
 ==================== Fin ======================
+
+Define las variables de los personajes A y B, cada una con sus estadísticas de ataque y defensa. Establece una variable "turno" que comience en 1.
+
+Usa una función de aleatoriedad para decidir quién empieza el combate.
+
+Crea un bucle while que continúe hasta que uno de los personajes sea derrotado. Dentro del bucle, usa una estructura if para determinar cuál personaje tiene el turno actual, y luego realiza la acción correspondiente.
+
+Si el turno es de A, calcula el daño que inflige A a B restando la estadística de defensa de B de la estadística de ataque de A. Si el daño es negativo, establece el daño en 0. Resta el daño calculado de la salud de B.
+
+Si el turno es de B, realiza la misma lógica que en el paso 4 pero al revés.
+
+Incrementa la variable "turno" en 1.
+
+Si la salud de A es menor o igual a 0, anuncia que B ha ganado. Si la salud de B es menor o igual a 0, anuncia que A ha ganado.
+
+Este es solo un ejemplo de cómo podrías crear un motor de juego para este tipo de combate. Sin embargo, hay muchas formas diferentes de abordar el problema, y la implementación final dependerá de los detalles específicos de tu juego.

@@ -7,7 +7,7 @@
 # Redondear cada cantidad a 2 decimales
 
 interes = 0.04
-monto_inicial = float(input("Ingresar el monto inicial de ahorro: "))
+monto_inicial = float(input("Ingrese el monto apertura de ahorro: "))
 
 saldo_anio1 = monto_inicial + (monto_inicial * interes)
 saldo_anio2 = saldo_anio1 + (saldo_anio1 * interes)
